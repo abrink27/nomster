@@ -8,6 +8,10 @@
 		<i><%= place.address %></i><br /><br />
 		<p><%= place.description %></p><br />
 
+		<% if place.photos.last.present? && place.photos.last.picture.present? %>
+ 		 <p><%= image_tag place.photos.last.picture %></p>
+ 	<% end %>
+
 		<% if place.user.present? %>
 			<small><%=place.user.email %></small>
 		<% end %>
@@ -22,13 +26,9 @@
   </blockquote>
 
  	
- 	<% if place.photos.last.present? && place.photos.last.picture.present? %>
- 		 <p><%= image_tag place.photos.last.picture %></p>
- 	<% end %>
-			
-			</div>
-			
-	<% end %>
+ 	</div>
+<% end %>	
+	
     </div>
 </div>
 	
