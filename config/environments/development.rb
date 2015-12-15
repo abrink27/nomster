@@ -8,7 +8,7 @@ Nomster::Application.configure do
    # enable_starttls_auto: true,
    # user_name: ENV['GMAIL_ADDRESS'],
   # password: ENV['GMAIL_PASSWORD']
-  }
+  
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
