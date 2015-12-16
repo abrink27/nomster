@@ -9,19 +9,19 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <%= image_tag 'slider1.jpg'%>
+      <%= image_tag 'slider1.jpg', :class => 'img-responsive' %>
       <div class="carousel-caption">
         Find the best burgers...
       </div>
     </div>
     <div class="item">
-    	<%= image_tag 'slider2.jpg' %>
+    	<%= image_tag 'slider2.jpg', :class => 'img-responsive' %>
     	<div class="carousel-caption">
-    		...the best pizza
+    		...the best pizza...
     	</div>
     </div>
     	<div class="item">
-    	<%= image_tag 'slider3.jpg' %>
+    	<%= image_tag 'slider3.jpg', :class => 'img-responsive' %>
     	<div class="carousel-caption">
     		...or the best anything else on Nomster!
     	</div>
@@ -48,7 +48,7 @@
 		<p><%= place.description %></p><br />
 
 		<% if place.photos.last.present? && place.photos.last.picture.present? %>
- 		 <p><img class= "img-responsive"<%= image_tag place.photos.last.picture %></img></p>
+ 		 <p><%= image_tag place.photos.last.picture, :class => "img-responsive" %></p>
  	<% end %>
 
 		<% if place.user.present? %>
