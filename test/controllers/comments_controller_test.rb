@@ -13,8 +13,8 @@ class CommentsControllerTest < ActionController::TestCase
         :rating => '5_stars'
       }
     end
-    assert_redirected_to places_path(place)
-    assert_equal 1, user.places.comments.count
+
+    assert_redirected_to place_path(place)
   end
 end
 
